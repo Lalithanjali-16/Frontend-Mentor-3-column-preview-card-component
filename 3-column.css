@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Hanken+Grotesk:ital,wght@0,100;0,300;1,100&family=Inter:wght@700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(0, 0%, 95%);
+}
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    padding: 40px;
+}
+.card-1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px ;
+}
+.card-3{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px ;
+}
+.card-img img{
+    height: 30px;
+    width: 50px;
+}
+ .card-1{
+background-color: hsl(31, 77%, 52%);
+}
+.card-2{
+background-color:  hsl(184, 100%, 22%);
+}
+.card-3{
+    background-color:  hsl(179, 100%, 13%);
+}
+.title{
+    color: hsl(0, 0%, 95%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.description{
+    color:  hsla(0, 0%, 100%, 0.75);
+    font-size: 14px;
+    padding-bottom: 50px;
+    line-height: 1.5;
+    font-family: 'League','Spartan';
+}
+.btn-primary{
+    padding-left:5px ;
+    justify-content: center;
+    align-items: center;
+}
+.main-btn{
+    width: 90%;
+    height: 40px;
+    font-size: 13px;
+    background-color: hsl(0, 0%, 95%);
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 40px;
+    border: none;
+    display: block;
+    align-items: center;
+    cursor: pointer;
+}
+.card-1 .main-btn{
+    color: hsl(31, 77%, 52%);
+}
+.card-2 .main-btn{
+color:  hsl(184, 100%, 22%);
+}
+.card-3 .main-btn{
+color:  hsl(179, 100%, 13%);
+}
+.main-btn:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+@media (max-width:700px) {
+    .card{
+        flex-direction: column;
+        padding: 5rem 0;
+    }
+}
